@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Get Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body onload="initClock()">
+    
+    <div class="wrapper">
+
+        <div class="top-bar">
+            <i class='bx bx-signal-4' style="position: relative; left: -115px; top: 0px;""></i>
+            <i class='bx bx-alarm' style="position: relative;right: -115px;top: 1px;"></i>
+            <i class='bx bx-battery' style="position: relative;right:-115px;top: 2px;font-size: 20px;"></i>
+        </div>
+
+        <header><i class="bx bx-left-arrow-alt"></i>Know Weather with: </header>
+        <section class="input-part">
+            <p class="info-text "></p>
+            <input type="text" placeholder="Enter City name" spellcheck="false" required autocomplete="off">
+            <div class="separator"></div>
+            <center><button>Device location</button></center>
+        </section>
+        <section class="weather-part">
+            <img src="#" alt="Weather-icon">
+            <div class="temp">
+                <span class="numb">_</span>
+                <span class="deg">°</span>C
+            </div>
+            <div class="weather">_ _</div>
+            <div class="location">
+                <i class="bx bx-map"></i>
+                <span>_, _</span>
+            </div>
+            <div class="bottom-details">
+                <div class="column feels">
+                    <i class="bx bxs-thermometer"></i>
+                    <div class="details">
+                        <div class="temp">
+                            <span class="numb-2">_</span>
+                            <span class="deg">°</span>C
+                        </div>
+                        <p>Feels like</p>
+                    </div>
+                </div>
+                <div class="column humidity">
+                    <i class="bx bxs-droplet-half"></i>
+                    <div class="details">
+                            <span>_</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bottom-bar">
+            <i class='bx bx-menu' style="cursor: pointer;"></i>
+            <i class='bx bx-home-alt-2' style="cursor: pointer;"></i>
+            <i class='bx bx-left-arrow-alt' style="cursor: pointer;"></i>
+        </div>
+
+        <!-- START date & time-->
+            <div class="datetime">
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="seconds">00</span>
+                    <span id="period">AM</span>
+                </div> 
+                <div class="date">
+                    <span id="dayname">Day</span>, 
+                    <span id="month">Month</span>
+                    <span id="daynum">00</span>,
+                    <span id="year">Year</span>
+                </div>
+            </div>
+        <!-- END date & time--> 
+
+
+    </div>
+
+      
+
+
+    <script src="script.js"></script>
+</body>
+</html>
